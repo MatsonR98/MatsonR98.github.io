@@ -9,17 +9,58 @@
     </head>
 
     <body>
-        <div class="section-div" style="justify-content:left">
+        <script src="scripts/switchTabs.js"></script>
+        <div class="section-div" style="justify-content:left; border: 4px var(--accent) solid;">
             <img src="resources/me.jpg">
             <p style="font-weight: bold; font-size: 28px; width: 40%; text-align: left; padding: 10px; padding-left: 30px;">Ryan Matson</p>
                 
         </div>
 
-        <div class="section-div" style="justify-content: center;">
-            <button>About Me</button>
-            <button>Projects</button>
-            <button>Other Things</button>
-            <button>Contact</button>
+        <div class="section-div" style="padding-top: 5px; padding-bottom: 5px; justify-content: center; margin-top: 15px; border: 4px var(--accent) solid;">
+            <button id="aboutMeButton" onclick="currentTab('aboutMeButton')">About Me</button>
+            <button id="projectsButton" onclick="currentTab('projectsButton')">Projects</button>
+            <button id="otherThingsButton" onclick="currentTab('otherThingsButton')">Other Things</button>
+            <button id="contactButton" onclick="currentTab('contactButton')">Contact</button>
+        </div>
+
+        <div class="section-div" id="aboutMe">
+            <div style="width: 100%;">
+                <h1 style="text-align: center;">About Me</h1>
+                <p class="inside-text">
+                    I am an information science major at the University of Pittsburgh, with a graduation date of December 2021.
+                </p>
+                <p class="inside-text" style="font-weight: bold;">Some Facts About Me:</p>
+                <ul class="inside-text">
+                    <li>I've climbed <a href="https://en.wikipedia.org/wiki/The_Quill_(volcano)">The Quill</a> in the Carribbean Netherlands</li>
+                    <li>I have a Wire Fox Terrier</li>
+                    <li>I'm fairly decent at Rocket League...</li>
+                </ul>
+                <p class="inside-text" style="font-weight: bold;">Interests:</p>
+                <ul class="inside-text">
+                    <li>Casual Astronomy</li>
+                    <li>Warhammer 40,000 (Books and media, not the tabletop game!)</li>
+                    <li>ThinkPads</li>
+                    <li>Kerbal Space Program</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-div" style="display: none;" id="projects">
+            <div style="width: 100%;">
+                <h1 style="text-align: center;">Projects</h1>
+            </div>
+        </div>
+
+        <div class="section-div" style="display: none;" id="otherThings">
+            <div style="width: 100%;">
+                <h1 style="text-align: center;">Other Things</h1>
+            </div>
+        </div>
+
+        <div class="section-div" style="display: none;" id="contact">
+            <div style="width: 100%;">
+                <h1 style="text-align: center;">Contact</h1>
+            </div>
         </div>
     </body>
 </html>

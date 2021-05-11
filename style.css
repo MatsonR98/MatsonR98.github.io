@@ -19,11 +19,9 @@ body {
     box-shadow: 0px 0px 15px black;
     border-radius: 20px;
     display: flex;
-    min-width: 60%;
-    max-width: 600px;
+    min-width: 200px;
+    width: 600px;
     margin-top: 40px;
-    border: 4px var(--accent) solid;
-    
 }
 
 .section-div img{
@@ -36,6 +34,13 @@ body {
 .section-div h1 {
     text-align: left;
     font-size: 24px;
+    color: black;
+}
+
+.section-div h2 {
+    text-align: center;
+    font-size: 22px;
+    color: black;
 }
 
 .section-div button {
@@ -55,4 +60,16 @@ body {
     border-radius: 10px;
     color: black;
     
+}
+
+.section-div button:active{
+    background-color: rgb(211, 211, 211);
+    color: var(--accent);
+    
+}
+
+.inside-text {
+    color: black;
+    font-weight: normal;
+    font-size: 18px;
 }
