@@ -1,10 +1,11 @@
 :root{
-    --accent: rgb(2, 108, 214);
+    --accent: rgb(0, 88, 177);
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(223, 223, 223);
+    background-color: #a5bbd1;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
     padding: 0px;
     display: flexbox;
@@ -15,7 +16,7 @@ body {
 .section-div {
     margin: auto;
     background-color: white;
-    padding: 20px;
+    padding: 40px;
     box-shadow: 0px 0px 15px black;
     border-radius: 20px;
     display: flex;
@@ -70,5 +71,5 @@ body {
 .inside-text {
     color: black;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 20px;
 }
