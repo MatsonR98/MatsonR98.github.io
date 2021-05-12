@@ -27,7 +27,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox=
 
 .img{
     border-radius: 50%;
-    border: 6px var(--accent) solid;
+    border: 6px white solid;
     width: 100px;
     height: 100px;
 }
