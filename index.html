@@ -14,13 +14,13 @@
 
     <body>
         <script src="scripts/switchTabs.js"></script>
-        <div class="section-div" style="justify-content:left; border: 4px var(--accent) solid;">
+        <div class="section-div" style="justify-content:left; border: none; background-image: linear-gradient(to top, #ffffff 60%, var(--accent));">
             <img class="img" src="resources/me.jpg">
-            <p style="font-weight: bold; font-size: 28px; width: 40%; text-align: left; padding: 10px; padding-left: 30px;">Ryan Matson</p>
+            <p style="font-weight: bold; font-size: 28px; width: 40%; text-align: left; padding: 10px; padding-left: 30px; color: var(--accent);">Ryan Matson</p>
                 
         </div>
 
-        <div class="section-div" style="padding-top: 10px; padding-bottom: 10px; justify-content: center; margin-top: 15px; border: 4px var(--accent) solid;">
+        <div class="section-div" style="padding-top: 10px; padding-bottom: 10px; justify-content: center; margin-top: 15px; border: none;">
             <button id="aboutMeButton" onclick="currentTab('aboutMeButton')">About Me</button>
             <button id="projectsButton" onclick="currentTab('projectsButton')">Projects</button>
             <button id="otherThingsButton" onclick="currentTab('otherThingsButton')">Other Things</button>
@@ -32,7 +32,7 @@
                 <h1 style="text-align: center;">About Me</h1>
                 <hr style="border: 1px solid var(--accent);">
                 <div style="justify-items: center;">
-                    <img style="border: 6px var(--accent) dashed; border-radius: 20px; height: auto; width: 40%; position: relative; margin-left: 30%; padding: 0px;" src="resources/sideimage.jpg">
+                    <img style="border: none; border-radius: 20px; height: auto; width: 40%; position: relative; margin-left: 30%; padding: 0px;" src="resources/sideimage.jpg">
                 </div>
                 <p>
                     I am an information science major at the University of Pittsburgh, with a graduation date of December 2021.
@@ -137,9 +137,11 @@
         </div>
 
         <div class="section-div" style="display: none;" id="otherThings">
-            <div style="width: 100%;">
+            <div style="width: 100%;" class="inside-text">
                 <h1 style="text-align: center;">Other Things</h1>
                 <hr style="border: 1px solid var(--accent);">
+                <h2>Three.js Globe</h2>
+                <iframe src="globe.html" style="width:100%; height:500px; margin-left: 0; border: none;"></iframe>
             </div>
         </div>
 
